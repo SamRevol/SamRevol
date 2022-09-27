@@ -1,0 +1,401 @@
+/* UTILITIES */
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/* NAVBAR STYLING STARTS */
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 10px 20px;
+ background-color: #fff;
+ color: #000;
+border-bottom-style: solid;
+    z-index: 1;
+    position: relative;
+}
+.nav-links a {
+ color: #000;
+}
+.nav-links a:hover{
+ color: #7c826b;
+transition: 0.3s ease;
+}
+/* LOGO */
+.logo {
+ font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ column-gap: 1em;
+ font-size: 16px;
+}
+.menu li {
+ padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.portfolio {
+ position: relative; 
+}
+.dropdown {
+ background-color: #c2cbb2;
+ padding: 1em 0;
+ position: absolute; /*WITH RESPECT TO PARENT*/
+ display: none;
+ border-radius: 0px 16px 16px 16px;
+ top: 24px;
+}
+.dropdown li + li {
+ margin-top: 10px;
+}
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 8em;
+ text-align: center;
+}
+.dropdown li:hover {
+ background-color: #fff;
+border-bottom-style: solid;
+border-bottom-color: #000;
+}
+.portfolio:hover .dropdown {
+ display: block;
+}
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+.portfolio-grid {
+    display: flex;
+}
+.skills {
+    display: block;
+    border-style: solid;
+    margin: 10px;
+    float: left;
+    width: 50%;
+    
+}
+.see-more {
+    padding: 10px;
+    border-top-style: solid;
+    border-top-color: #000;
+    border-bottom-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    width: 100%;
+    color: #c2cbb2;
+    background-color: #000;
+    letter-spacing: 4px;
+}
+.see-more:hover{
+background-color: #c2cbb2;
+color: #000;
+transition: 0.3s ease;
+cursor: pointer;
+}
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+footer {
+  display: block;
+}
+
+
+.illustration {
+  position: relative;
+    display: inline-block;
+  color: black;
+  padding: 40px;
+    height: length;
+    overflow: scroll;
+    }
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 40px;
+  left: 40%;
+}
+
+.contact {
+   position: absolute;
+  top: 40%;
+  left: 40px;
+    }
+
+.links {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  color: black;
+  padding: 20px;
+}
+
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+    padding: 4%;
+    text-align: center;
+}
+h2 {
+    padding: 0% 4%;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    text-align: center;
+    
+}
+.row {
+  margin: 0px 0px;
+    display: table;
+    width: 100%;
+}
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 2%;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.333%;
+    display: table-cell;
+    min-height: 0px;
+}
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Content */
+.content {
+  background-color: white;
+  padding: 0px;
+    border-style: solid;
+    justify-content: space-evenly;
+    display: table-cell;
+    border-radius: 0px 16px 16px 16px;
+    overflow: hidden;
+}
+h3 {
+    padding: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+h4 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+h5 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 4px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h6 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    text-align: center;  
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+}
+.button {      
+   bottom: 0; 
+}
+.video {
+    width: 66.67%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 0px 16px 16px 16px;
+    overflow: hidden;
+    background-image: radial-gradient(#c2cbb2, #fff);
+    border-style: solid;  
+}
+.vertical-video {
+    width: 66.67%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 16px 0px 16px 16px;
+    overflow: hidden;
+    background-image: radial-gradient(#c2cbb2, #fff);
+    border-style: solid;
+}
+.example {
+    width: 66.67%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 0px 16px 16px 16px;
+    overflow: hidden;
+    background-image: radial-gradient(#c2cbb2, #fff);
+    border-style: solid;  
+}
+
+
+
+
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  color: #c2cbb2;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  } 
+    .video {
+        width: 100%;
+    }
+    .vertical-video {
+        width: 100%;
+    }
+    .example {
+        width: 100%;
+    }
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+margin-top: 30px;
+ background-color: #fff;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+    border-bottom-style: solid;
+    border-bottom-color: #000;
+    border-top-style: solid;
+    border-top-color: #000;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:#fff;
+ transition: 0.3s ease;
+    
+}
+.menu li + li {
+ margin-top: 12px;
+    color: #fff;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+.dropdown {
+ left: 50%;
+ top: 10px;
+ transform: translateX(35%);
+}
+.dropdown li:hover {
+ background-color: #fff;
+}
+}
+

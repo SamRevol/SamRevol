@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sam Revol - Illustration</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;700&family=Josefin+Sans:ital,wght@0,100;0,400;0,600;1,100;1,400;1,600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo">
+        <a href="index.html"><img src="assets/logo.png" width="100px;"></a>
+        </div>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- USING CHECKBOX HACK -->
+       <input type="checkbox" id="checkbox_toggle" />
+       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li class="portfolio">
+           <a href="portfolio.html">Portfolio</a>
+           <!-- DROPDOWN MENU -->
+           <ul class="dropdown">
+               <li><a href="illustration.html">Illustration</a>   </li>
+               <li><a href="print.html">Print</a></li>
+               <li><a href="ux-ui.html">UX/UI</a></li>
+               <li><a href="motion.html">Motion</a></li>
+               <li><a href="branding.html">Brand Identity</a></li>
+               <li><a href="360-com.html">360°</a></li>
+           </ul>
+         </li>
+         <li><a href="contact.html">Contact</a></li>
+       </div>
+     </ul>
+   </nav>
+ 
+<h1>Illustration</h1>
+<h2>Pictures > Text</h2>
+      
+<div class="example">
+    <img src="assets/mme_revol.gif" width="100%">
+    <h3>La Naissance de Mme Revol</h3>
+    <h4>Animated comic strip</h4>
+    <p>In this comic strip I share the story of my immigration to France and the celebration of assuming a new identity. "La Naissance de Mme Revol" or "the birth of Mrs. Revol" touches on the emotions of assuming a new family name.</p>
+      </div>  
+    
+<div class="example">
+<div class="slideshow-container">
+  <div class="mySlides1 fade"> 
+    <!--Image here-->
+    <div class="image img1"><img src="assets/francofilles_banner.jpg" width="100%"></div>
+  </div>
+  <div class="mySlides1 fade"> 
+    <!--Image here-->
+    <div class="image img2"><img src="assets/franco1.png" width="100%"></div>
+  </div>
+  <div class="mySlides1 fade"> 
+    <!--Image here-->
+    <div class="image img3"><img src="assets/franco2.png" width="100%"></div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a> <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+  <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,0)"></span> <span class="dot" onclick="currentSlide(2,0)"></span> <span class="dot" onclick="currentSlide(3,0)"></span> </div>
+</div>
+    <h3>The Francofilles</h3>
+    <h4>Art for instagram blog @thefrancofilles</h4>
+    <p><a href="https://www.instagram.com/thefrancofilles/?hl=en">The Francofilles</a> is a blog dedicated to Francophone culture that was started at the beginning of the pandemic. I created content to be shared daily on Instagram.</p>
+      </div>  
+    
+  
+<footer>
+  <h3>Sam Revol</h3>
+  <p><a href="mailto:samantharevol@gmail.com">samantharevol@gmail.com</a></p>
+  <p>Copyright © 2022 All rights reserved</p>
+</footer>
+      
+      <script>
+      var slideIndex = [1,1,1,1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+function currentSlide(n, no) {
+  showSlides(slideIndex[no] = n, no);
+}
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+  </body>
+</html>
